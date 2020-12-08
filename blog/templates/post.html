@@ -1,0 +1,9 @@
+{% extends 'single_template.html' %}
+{% block title %}MySite {{ post.title }}{% endblock %}
+
+{% block entery %}
+        <h2>{{ post.title }}</h2>
+        <div>
+            {{ post.content|linebreaks }}
+        </div>
+{% endblock %}
